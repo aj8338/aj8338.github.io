@@ -6,8 +6,8 @@ bookNowbtn.addEventListener("click",function(){
     let userEmail = document.getElementById("userEmail");
     let userEmailVal= userEmail.value;
 
-    let userPax = document.getElementById("userPax").value;
-    let userRemarks=document.getElementById("userRemarks").value;
+    let userPaxVal = document.getElementById("userPax").value;
+    let UserRemarksVal=document.getElementById("userRemarks").value;
 
     BookNow(userNameVal,userEmailVal,userPaxVal,UserRemarksVal);
 
