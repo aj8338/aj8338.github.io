@@ -4,16 +4,19 @@ refreshNowBtn.addEventListener("click",function(){
  GetBooking();
 });
 
-function GetBooking
-let url = 'https://api.sheety.co/5d98dc1133a299f4ca55f896b57e5881/tableapp/bookingitems';
-
-   fetch(url)
-.then((response) => response.json())
-.then(json => {
+    function GetBooking
+    let url = 'https://api.sheety.co/5d98dc1133a299f4ca55f896b57e5881/tableApp2/bookingitems';
+    fetch(url)
+    .then((response) => response.json())
+    .then(json =>  {
 
     let bookingNameList = document.getElementById("bookingNameList");
 
-    for(let i=0; i < json.bookingitems.length, i++){
+    //clear the table rows
+    for(let k= bookingNameList.rows.length-1;k > 0; k--)
+    bookingNameList.deleteRow(k);
+
+    for(let i=0; i < json.bookingitems.length, i++;) {
         let gName = json.bookingitems[i].name;
         let gEmail = json.bookingitems[i].email;
         let gPax = json.bookingitems[i].pax;
