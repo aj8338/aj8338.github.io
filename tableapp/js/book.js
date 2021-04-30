@@ -9,7 +9,7 @@ bookNowbtn.addEventListener("click",function(){
 
     let userRemarks=document.getElementById("userRemarks").value
 
-    BookNow(userNameVal,userEmailVal,userPaxVal,UserRemakrsVal);
+    BookNow(userNameVal,userEmailVal,userPaxVal,UserRemarksVal);
 
 })
 
