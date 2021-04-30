@@ -5,7 +5,7 @@ bookNowbtn.addEventListener("click",function(){
     let userEmail = document.getElementById("userEmail");
     let userEmailVal= userEmail.value;
     let userPax = document.getElementById("userPax");
-    let userPaxVal= userPax.value;
+    let userPaxVal= userPax.value
 
     let userRemarks=document.getElementById("userRemarks").value
 
