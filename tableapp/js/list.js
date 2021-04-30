@@ -5,7 +5,7 @@ refreshNowBtn.addEventListener("click",function(){
 });
 
 function GetBooking
-   let url = 'https://api.sheety.co/5d98dc1133a299f4ca55f896b57e5881/tableapp/bookingitems';
+let url = 'https://api.sheety.co/5d98dc1133a299f4ca55f896b57e5881/tableapp/bookingitems';
 
    fetch(url)
 .then((response) => response.json())
